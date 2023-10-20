@@ -1,0 +1,276 @@
+body{
+    color: black;
+}
+
+body{
+    z-index: 0;
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+}
+
+
+
+nav{
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+}
+
+nav a{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 750;
+    font-size: 18px;
+    color: rgb(233, 240, 247);
+}
+
+nav a:hover{
+    font-size:24px;
+    margin: 12px;
+}
+
+@media (max-width:500px){
+    nav a{
+        margin: 12px;
+        font-size: 15px;
+
+    }
+    
+    nav a:hover{
+        font-size:16px;
+        margin: 6px;
+    }
+}
+
+
+
+h1,h2{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+    
+}
+
+h3{
+    font-size: 35px;
+    margin: auto;
+}
+
+h4{
+    font-size:30px;
+    margin: auto;
+}
+
+h5{
+    font-size:27px;
+    margin: auto;
+}
+
+
+p{
+    font-size: 24px;
+    max-width: 95%;
+    margin: 0;
+}
+
+
+header{
+    z-index: 100;
+    position:relative;
+    padding-top:75px;
+    text-align: center;
+    background-color: rgb(153, 203, 246);
+    color: rgb(0, 0, 0);
+    
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+    padding-top: 25px;
+    
+}
+
+@media(min-width:950px){
+    .wrapper{
+        flex-direction: row;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    
+      }
+    .grid-item {
+        margin-left: 10px;
+      }
+
+    .grid-container-rev {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    
+      }
+      .resume-header{
+        text-align: left;
+    }
+    #short-flex{
+        width: 600px;
+        margin: 0;
+    }
+}
+
+.intro_desc{
+    margin-left: 50px;
+}
+
+.grid-container,.grid-container-rev  {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-top: 20px;
+  }
+
+.grid-item {
+
+    text-align: center;
+
+    
+  }
+
+.resume-header{
+    padding-bottom: 25px;
+}
+
+#my-resume{
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgb(218, 247, 247);
+}
+#my-resume:hover{
+    background-color: rgb(150, 231, 231);
+}
+
+#my-resume a{
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: darkblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#my-resume a:hover{
+    color: blue;
+}
+
+#my-projects{
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgb(224, 224, 224);
+}
+#my-projects:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+.btn-container{
+    text-align: center;
+    padding: 50px;
+}
+
+.pdf-btn-container{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.btn{
+    width:400px;
+    height: 100px;
+    font-size: 45px;
+    font-weight: 200;
+    border-radius: 20px;
+    background-color: rgb(224, 197, 197);
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: rgb(90, 40, 40);
+    color: rgb(255, 255, 255);
+
+}
+
+.pdf-btn{
+    width:350px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: rgb(102, 238, 113);
+    color: rgb(62, 19, 19);
+    cursor:pointer;
+}
+
+.pdf-btn:hover{
+    background-color: rgb(37, 83, 41);
+    color: rgb(254, 172, 172);
+}
+
+#resume-body{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0;
+    max-width: 90%;
+    margin: auto;
+
+}
+
+#resume-body h4,h5{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-weight: 600;
+    
+}
+
+
+.flex-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+li {
+    font-size: 24px;
+    padding-bottom: 7px;
+    max-width: 75%;
+    
+
+}
+
+@media (max-width:680px){
+    .flex-wrap{
+        display:contents;
+    }
+
+}
+
+.trans-item{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
