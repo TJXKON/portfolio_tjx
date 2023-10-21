@@ -3,7 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lilita+One|Montserrat|Open+Sans:400,700" rel="stylesheet">
         <title>Projects</title>
     </head>
 
@@ -16,14 +16,79 @@
             <a href='./contact.html'>Contact</a>
             </nav>
         <div class="wrapper">
-            <div><img src="./img/construction.jpg" width="auto" height="auto" alt="construction"/></div>
+            <div><img src="./img/pj_icon.jpg" width="350px" height="350px" alt="projects" style="border-radius: 80%;"/></div>
             <div style="padding:20px">
-                <h1>Sorry</h1>
-                <p>This page is under construction</p>
+                <h1>My Projects</h1>
+                <p>My school assignment projects, and also my personal side projects.</p>
             </div>
         </div>
 
         </header>
+        <div style="background: linear-gradient(rgba(197, 230, 255, 0.7),rgb(197, 230, 255,0.6)),url(./img/bg2.jpg) fixed;background-size: cover;">
+<!--
+        <div class="project-grid">
+            <h3 class="project-title">Sub Title</h3>
+            <p>Description of the project... AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+            <section>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="img-01" src="./img/profile.jpg" width="350px" height="350px" alt="profile"/>
+                        <img id="img-02" src="./img/profile.jpg" width="350px" height="350px" alt="profile"/>
+                        <img id="img-03" src="./img/profile.jpg" width="350px" height="350px" alt="profile"/>
+                    </div>
 
+                    <div class="slider-nav">
+                        <a href="#img-01"></a>
+                        <a href="#img-02"></a>
+                        <a href="#img-03"></a>
+                    </div>
+                </div>
+
+            </section>
+            <a href="" target="_blank"><button class="project-btn">Try</button></a>
+        </div>
+    -->
+        
+        <div class="project-grid">
+            <h3 class="project-title">AI generated art Classifier</h3>
+            <p>A classifier model to detect and classify artwork produced by AI model. This is also part of my final year project for AI art detection learning.
+                This model is trained by Anime arts from Pixiv including real human artworks and AI artworks. The classifier model is trained through Keras CNN method.
+                A build in classifier web app is provided, try it out!
+            </p>
+
+
+                <img id="img-0" src="./img/classifier_sample.jpg" width="750px" height="auto" alt="classifier_sample"/>
+
+
+                <a href="./classifier.html" target="_blank"><button class="project-btn">Try here</button></a>
+                <a href="https://huggingface.co/spaces/TJXKON/AI_Art_Classifier/tree/main" target="_blank" ><button class="project-btn" style="width:390px;">Huggingface Space</button></a>
+
+            
+        </div>
+
+        <div class="project-grid">
+            <h3 class="project-title">Wood Defect Detector</h3>
+            <p>One of my group assignment of school projects for digital image processing course. It uses openCV for image processing and algorithms to detect the defects like holes and knots of wood in an image.</p>
+            <section>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="img-01" src="./img/defect_sample1.jpg" width="auto" height="auto"  alt="wood_sample1"/>
+                        <img id="img-02" src="./img/defect_sample2.jpg" width="autp" height="auto"  alt="wood_sample2"/>
+                    </div>
+
+                    <div class="slider-nav">
+                        <a href="#img-01"></a>
+                        <a href="#img-02"></a>
+ 
+                    </div>
+                </div>
+
+            </section>
+            <a href="https://github.com/TJXKON/WoodDefectCheck" target="_blank"><button class="project-btn">Source Code</button></a>
+        </div>
+        
+
+    <br>
+    </div>
     </body>
 </html>
